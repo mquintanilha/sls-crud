@@ -1,0 +1,13 @@
+{
+  "name": "minimal-app-crud",
+  "version": "1.0.0",
+  "description": "Serverless CRUD service exposing a REST HTTP interface",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.659.0",
+    "dotenv": "^8.2.0",
+    "serverless-dotenv-plugin": "^2.4.2",
+    "uuid": "^2.0.3"
+  }
+}
