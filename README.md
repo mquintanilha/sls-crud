@@ -1,4 +1,5 @@
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mquintanilha_sls-crud&metric=alert_status)](https://sonarcloud.io/dashboard?id=mquintanilha_sls-crud)
 # Serverless REST API
 Simple application example for CRUD.
 
