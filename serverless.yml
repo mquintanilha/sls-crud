@@ -25,46 +25,46 @@ functions:
   create:
     tags:
       VERSION: ${env:VERSION}
-    handler: todos/create.create
+    handler: cadastro/create.create
     events:
       - http:
-          path: todos
+          path: cadastro
           method: post
           cors: true
 
   list:
     tags:
       VERSION: ${env:VERSION}
-    handler: todos/list.list
+    handler: cadastro/list.list
     events:
       - http:
-          path: todos
+          path: cadastro
           method: get
           cors: true
 
   get:
     tags:
       VERSION: ${env:VERSION}
-    handler: todos/get.get
+    handler: cadastro/get.get
     events:
       - http:
-          path: todos/{id}
+          path: cadastro/{id}
           method: get
           cors: true
 
   delete:
     tags:
       VERSION: ${env:VERSION}
-    handler: todos/delete.delete
+    handler: cadastro/delete.delete
     events:
       - http:
-          path: todos/{id}
+          path: cadastro/{id}
           method: delete
           cors: true
 
 resources:
   Resources:
-    TodosDynamoDbTable:
+    cadastroDynamoDbTable:
       Type: 'AWS::DynamoDB::Table'
       DeletionPolicy: Retain
       Properties:
