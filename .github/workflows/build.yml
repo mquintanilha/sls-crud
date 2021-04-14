@@ -7,11 +7,6 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
-  run: |
-    npm install -g stryker-cli
-    npm install --save-dev @stryker-mutator/core
-    stryker init
-    stryker run --logLevel trace
   sonarcloud:
     name: SonarCloud
     runs-on: ubuntu-latest
