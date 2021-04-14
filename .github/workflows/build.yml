@@ -23,4 +23,4 @@ jobs:
       - run: npm ci
       - run: npm run stryker
         env:
-          STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_KEY }}
+          STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
