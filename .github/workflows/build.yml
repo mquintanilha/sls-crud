@@ -19,3 +19,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      
+      - name: Mutation Test
+        uses: actions/checkout@v2
+        run: | 
+          npm install --save-dev stryker stryker-api
+          npx stryker run --fileLogLevel trace --logLevel debug
+        env:
+          STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}

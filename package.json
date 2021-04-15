@@ -9,5 +9,16 @@
     "dotenv": "^8.2.0",
     "serverless-dotenv-plugin": "^2.4.2",
     "uuid": "^2.0.3"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.7.9",
+    "jasmine-core": "^3.5.0",
+    "karma": "^4.4.1",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "^1.1.2",
+    "karma-jasmine": "^3.1.0",
+    "lite-server": "^2.5.4",
+    "@stryker-mutator/core": "^4.5.1",
+    "@stryker-mutator/karma-runner": "^4.5.1"
   }
 }
